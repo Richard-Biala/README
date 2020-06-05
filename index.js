@@ -18,8 +18,33 @@ function promptUser() {
         },
         {
             type: "input",
-            name: "hobby",
-            message: "What is your favorite hobby?"
+            name: "contents",
+            message: "Table of Contents"
+        },
+        {
+            type: "input",
+            name: "install",
+            message: "Intallation"
+        },
+        {
+            type: "input",
+            name: "usage",
+            message: "Usage?"
+        },
+        {
+            type: "input",
+            name: "license",
+            message: "Licenses?"
+        },
+        {
+            type: "input",
+            name: "contributing",
+            message: "Contrabutions?"
+        },
+        {
+            type: "input",
+            name: "tests",
+            message: "Tests"
         },
         {
             type: "input",
@@ -52,7 +77,12 @@ function generateHTML(answers) {
     <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
     <ul class="list-group">
       <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">My favorit hobby is ${answers.hobby}</li>
+      <li class="list-group-item">Table of Contents: ${answers.contents}</li>
+      <li class="list-group-item">Installations: ${answers.install}</li>
+      <li class="list-group-item">Usage: ${answers.usage}</li>
+      <li class="list-group-item">License: ${answers.license}</li>
+      <li class="list-group-item">Contributions: ${answers.contributing}</li>
+      <li class="list-group-item">Table of Contents: ${answers.tests}</li>
       <li class="list-group-item">Web app link: ${answers.link}</li>
     </ul>
   </div>
